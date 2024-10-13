@@ -66,3 +66,5 @@ export interface IUser {
     };
   }
   
+
+  export type IUserBasicInfo  = Pick<IUser, 'gender' | 'name' | 'location' | 'email' | 'picture'>;
