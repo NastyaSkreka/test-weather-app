@@ -38,9 +38,8 @@ const WeatherModal: React.FC<WeatherModalProps> = ({
             mt={2}
             sx={{
               display: "flex",
-              flexDirection: "column",
               alignItems: "center",
-              textAlign: "center",
+              gap: "20px"
             }}
           >
             <Box sx={{ fontSize: "48px" }}>
@@ -52,7 +51,7 @@ const WeatherModal: React.FC<WeatherModalProps> = ({
             </Typography>
           </Box>
         )}
-        <Button onClick={onClose} label="Close" />
+        <Button onClick={onClose} label="Close" type="close" />
       </Box>
     </Modal>
   );

@@ -17,7 +17,7 @@ const UserCard: React.FC<UserCardProps> = ({
   onWeather,
 }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg p-6 bg-white mb-3 mt-2">
+    <div className="w-80 rounded overflow-hidden shadow-lg p-6 bg-white mb-3 mt-2">
       <img
         className="w-32 h-32 rounded-full mx-auto"
         src={picture.medium}

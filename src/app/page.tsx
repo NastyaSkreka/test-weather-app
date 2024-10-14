@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
          <Button
           label="Saved Users"
           onClick={handleNavigateToSavedUsers}
@@ -47,7 +47,7 @@ export default function Home() {
           type="default"
         />
       {data?.pages.map((page, pageIndex) => (
-        <div key={pageIndex}>
+        <div className="flex flex-wrap gap-5"  key={pageIndex}>
           {page.map((user: IUser) => (
             <UserList
               key={user.login.uuid}
