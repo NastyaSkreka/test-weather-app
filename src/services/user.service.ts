@@ -4,10 +4,8 @@ import { IUserResponse } from "@/types/user.types";
 class UserService {
   private BASE_URL = "https://randomuser.me/api/";
 
-  async fetchUsers() {
-    const response = await axios.get<IUserResponse>(
-      `${this.BASE_URL}?results=10`
-    );
+  async fetchUsers(page: number) {
+    const response = await axios.get<IUserResponse>(`${this.BASE_URL}?results=10&page=${page}`);
     return response.data.results;
   }
 }
